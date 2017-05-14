@@ -1,0 +1,16 @@
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.note-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-submit-btn {
+  width: 100%;
+}

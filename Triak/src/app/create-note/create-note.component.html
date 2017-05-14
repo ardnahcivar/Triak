@@ -1,0 +1,24 @@
+<div class="note-content">
+<div class="create-note-header">
+  <h1>Create a awesome Note</h1>
+</div>
+<div class="create-note-form">
+  <form #noteForm="ngForm" class="example-form">
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><md-input-container class="example-full-width">
+        <input [(ngModel)]="myNote.title" name="title" mdInput placeholder="Title" required>
+      </md-input-container></td>
+    </tr></table>
+    <p>
+      <md-input-container class="example-full-width">
+        <textarea [(ngModel)]="myNote.note" name="note" rows="10" mdInput placeholder="Note" required></textarea>
+      </md-input-container>
+    </p>
+    <div class="example-container">
+      <div class="button-row">
+        <button (click)="createNote(myNote)"class="note-submit-btn" [disabled]="!noteForm.form.valid" md-raised-button color="accent">Note it</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>

@@ -1,0 +1,18 @@
+
+<md-toolbar color="primary">
+  <span>Application Title</span>
+</md-toolbar>
+
+<div class="main_content">
+  <md-sidenav-container class="example-sidenav-fab-container">
+      <ul *ngFor="let item of sidebar_list_items" >
+        <li [class.selected]="item === selected_nav_item" (click)="onSelect(item)">{{item}}</li>
+      </ul>
+  </md-sidenav-container>
+
+<div class="child-content">
+  <create-note *ngIf="selected_nav_item === 'CREATE'"  [navitem]="selected_nav_item"></create-note>
+  <show-notes *ngIf="selected_nav_item === 'SHOW ALL'" [navitem]="selected_nav_item"></show-notes>
+</div>
+
+</div>
