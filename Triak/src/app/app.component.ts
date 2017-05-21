@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  sidebar_list_items = ['HOME', 'CREATE', 'SHOW ALL', 'ABOUT'];
+  sidebar_list_items = ['HOME', 'CREATE', 'SHOW', 'ABOUT'];
   selected_nav_item: string;
 
   onSelect(nav_item: string): void {

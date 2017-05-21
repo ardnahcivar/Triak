@@ -1,18 +1,30 @@
+<link rel="manifest" href="/manifest.json">
+<md-sidenav-container class="example-container">
+    <md-sidenav #sidenav class="example-sidenav">
+      <div class="nav-items">
+        <ul *ngFor="let item of sidebar_list_items">
+            <li class="item" [class.selected]="item === selected_nav_item" (click)="onSelect(item);sidenav.close()" >{{item}}</li>
+            <hr>
+        </ul>
+      </div>
+    </md-sidenav>
 
-<md-toolbar color="primary">
-  <span>Application Title</span>
-</md-toolbar>
+    <md-toolbar color="primary">
+      <div class="side-button">
+          <i class="selected" (click)="sidenav.open()" class="fa fa-bars" style="font-size:48px;color:red"></i>
+      </div>
+      <span id="app-title">Triak</span>
+    </md-toolbar>
+    <md-spinner *shellRender></md-spinner>
 
-<div class="main_content">
-  <md-sidenav-container class="example-sidenav-fab-container">
-      <ul *ngFor="let item of sidebar_list_items" >
-        <li [class.selected]="item === selected_nav_item" (click)="onSelect(item)">{{item}}</li>
-      </ul>
-  </md-sidenav-container>
-
-<div class="child-content">
-  <create-note *ngIf="selected_nav_item === 'CREATE'"  [navitem]="selected_nav_item"></create-note>
-  <show-notes *ngIf="selected_nav_item === 'SHOW ALL'" [navitem]="selected_nav_item"></show-notes>
-</div>
-
-</div>
+    <div class="main-content">
+    <div class="child-content box2">
+      <div class="create-item">
+        <create-note *ngIf="selected_nav_item === 'CREATE'"  [navitem]="selected_nav_item"></create-note>
+      </div>
+      <div class="show-notes">
+        <show-notes *ngIf="selected_nav_item === 'SHOW'" [navitem]="selected_nav_item"></show-notes>
+      </div>
+    </div>
+    </div>
+</md-sidenav-container>

@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MdToolbarModule, MdSidenavModule, MdButtonModule,
-  MdIconModule, MdMenuModule, MdInputModule, MdCardModule} from '@angular/material';
+  MdIconModule, MdMenuModule, MdInputModule, MdCardModule, MdProgressSpinnerModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
 
@@ -33,9 +34,11 @@ import { ShowNotesComponent } from './show-notes/show-notes.component';
     MdMenuModule,
     MdInputModule,
     MdCardModule,
+    MdProgressSpinnerModule,
     NgbModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

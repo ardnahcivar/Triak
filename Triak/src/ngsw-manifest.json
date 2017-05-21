@@ -1,0 +1,20 @@
+{
+  "dynamic":{
+    "group":[
+      {
+        "name":"firebase",
+        "https://my-awesome-note.firebaseapp.com/":{
+          "":{
+            "match":"prefix"
+          }
+        },
+        "cache":{
+          "optimizerFor":"freshness",
+          "maxAgeMs":3600000,
+          "maxEntries":20,
+          "strategy":"lru"
+        }
+      }
+    ]
+  }
+}

@@ -15,8 +15,8 @@
       </md-input-container>
     </p>
     <div class="example-container">
-      <div class="button-row">
-        <button (click)="createNote(myNote)"class="note-submit-btn" [disabled]="!noteForm.form.valid" md-raised-button color="accent">Note it</button>
+      <div class="button-row note-submit-btn">
+        <button (click)="createNote(myNote)" class="note-submit-btn" [disabled]="!noteForm.form.valid" md-raised-button color="accent">Note it</button>
       </div>
     </div>
   </form>

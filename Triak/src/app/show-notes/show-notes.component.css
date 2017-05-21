@@ -5,5 +5,10 @@
 
 li {
   list-style-type: none;
-  display: inline-block;
+}
+
+.allnotes {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
 }
