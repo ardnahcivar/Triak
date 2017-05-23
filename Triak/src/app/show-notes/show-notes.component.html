@@ -1,5 +1,4 @@
 <div class="allnotes">
-  <ul>
     <li *ngFor="let note of allnotes|async" >
       <md-card class="example-card">
         <md-card-header>
@@ -10,11 +9,9 @@
             {{note.note}}
           </p>
         </md-card-content>
-        <md-card-actions>
+        <!-- <md-card-actions>
           <button md-button>Remove</button>
-        </md-card-actions>
+        </md-card-actions> -->
       </md-card>
     </li>
-  </ul>
-
 </div>

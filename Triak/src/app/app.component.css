@@ -63,6 +63,12 @@ hr {
   flex-flow: row wrap
 }
 
+.show-notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 /*
 .nav-items {

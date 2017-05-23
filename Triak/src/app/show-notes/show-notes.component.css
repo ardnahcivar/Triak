@@ -1,14 +1,38 @@
-.example-card {
-  width: 200px;
-  height: 200px;
-}
-
 li {
   list-style-type: none;
+  display: block;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
-.allnotes {
-  display: flex;
-  flex-direction: row wrap;
-  justify-content: center;
+md-card-header {
+  background-color: #009688;
+  color: white;
 }
+
+md-card-content {
+  background-color: #EEEEEE;
+  max-height: 100%;
+}
+
+.example-card {
+  padding: 5px;
+}
+
+.card-actions {
+  float: right;
+  background-color: #F44336;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.mat-button {
+  min-width: 0px;
+}
+
+
+/*
+.mat-button {
+  max-width: 0px;
+}*/

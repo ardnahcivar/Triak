@@ -12,9 +12,13 @@
 }
 
 .note-submit-btn {
-  width: 200px;
+  min-width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
+}
+
+.note-submit-btn:hover {
+  background-color: #E91E63;
+  color: white;
 }
 
 .create-note-header {
