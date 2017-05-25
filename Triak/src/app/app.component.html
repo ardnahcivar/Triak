@@ -1,7 +1,7 @@
 <link rel="manifest" href="/manifest.json">
 <md-sidenav-container class="example-container">
-    <md-sidenav #sidenav class="example-sidenav">
-      <div class="nav-items">
+    <md-sidenav #sidenav class="example-sidenav" (swipeleft)="swipe($event.type,sidenav)">
+      <div class="nav-items" >
         <ul *ngFor="let item of sidebar_list_items">
             <li class="item" [class.selected]="item === selected_nav_item" (click)="onSelect(item);sidenav.close()" >{{item}}</li>
             <hr>
@@ -27,4 +27,5 @@
       </div>
     </div>
     </div>
+    
 </md-sidenav-container>

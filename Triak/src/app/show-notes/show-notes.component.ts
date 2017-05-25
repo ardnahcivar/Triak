@@ -15,10 +15,15 @@ export class ShowNotesComponent implements OnInit {
 
   constructor(db: AngularFireDatabase) {
     this.allnotes = db.list('/notes');
+    console.log(this.allnotes);
   }
 
   ngOnInit() {
   }
 
+
+  removeNote(selected_key: string) {
+    this.allnotes.remove(selected_key);
+  }
 
 }

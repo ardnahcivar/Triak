@@ -15,12 +15,14 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CreateNoteComponent } from './create-note/create-note.component';
 import { ShowNotesComponent } from './show-notes/show-notes.component';
+import { DetailNoteComponent } from './detail-note/detail-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateNoteComponent,
     ShowNotesComponent,
+    DetailNoteComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,8 +33,8 @@ hr {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin: 10% auto;
-  width: 300px;
+  margin: 0 auto;
+  min-width: 100%;
 }
 
 .side-navbar {

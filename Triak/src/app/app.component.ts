@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,11 @@ export class AppComponent {
 
   onSelect(nav_item: string): void {
     this.selected_nav_item = nav_item;
+  }
+
+  swipe(action, sidenav) {
+    console.log("CALLED LEFT");
+    sidenav.close();
   }
 
 }
