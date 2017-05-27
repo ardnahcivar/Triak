@@ -1,6 +1,10 @@
 # Triak
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+Still working ,stuck on service worker , no idea why it is not working
+
+deployed on:my-awesome-note.firebaseapp.com
+
 
 ## Development server
 

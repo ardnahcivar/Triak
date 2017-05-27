@@ -1,9 +1,0 @@
-{
-  "name": "triak",
-  "short_name": "triak",
-  "theme_color": "black",
-  "background_color": "#e0e0e0",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "orientation": "portrait"
-}

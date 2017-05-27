@@ -23,8 +23,10 @@ export class CreateNoteComponent implements OnInit {
 
   createNote(myNote) {
     console.log(myNote);
-    this.notes.push(myNote);
+    var status = this.notes.push(myNote);
+    console.log('STATUS OF INSERTION:' + status);
     this.myNote.title = "";
     this.myNote.note = "";
   }
+
 }

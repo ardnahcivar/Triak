@@ -12,8 +12,9 @@ platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .then(() => {
     if ('serviceWorker' in navigator) {
-      console.log('registered service worker');
-      navigator.serviceWorker.register('/worker-basic.min.js');
+      navigator.serviceWorker.register('/worker-basic.min.js').then(function() {
+        console.log('registered service worker');
+      });
     } else {
       console.log('service worker not supported');
     }

@@ -1,6 +1,7 @@
 md-toolbar {
   z-index: 10;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+  position: fixed;
 }
 
 ul {
@@ -19,7 +20,9 @@ hr {
   color: red;
 }
 
-.selected {}
+.create-item {
+  margin-top: 60px;
+}
 
 .nav-items {
   margin-top: 50%;
@@ -67,6 +70,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 60px;
 }
 
 
